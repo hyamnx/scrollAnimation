@@ -1,0 +1,171 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+body{
+    background-color: #CBCBCB;
+    margin: 0;
+    font-size: 14px;
+    color: #2E373A;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#page1{
+    /* background-color: antiquewhite; */
+    position: relative;
+    height: 100vh   ;
+    
+    
+    
+}
+#heading{
+    /* background-color: blue; */
+    
+    position: fixed;
+    width: 100vw;
+    top: 0%;
+    text-align: center;
+}
+#img{
+    position: relative;
+    text-align: center;
+    bottom: 0%;
+    /* background-color: rgb(11, 8, 8); */
+    width: 90vw;
+    top: 40%;
+    left: 5%;
+    right: 5%;
+}
+#img{
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{ transform: rotate(360deg);}
+}
+
+
+#page2{
+    /* background-color: rgb(215, 250, 223); */
+    position: relative;
+    height: 100vh;
+    
+}
+.intro{
+    animation: autoShow both;
+    animation-timeline: view(70% 5%);
+}
+@keyframes autoShow{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.4);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        
+    }
+}
+
+#mainP{
+    /* background-color: blueviolet; */
+    position: relative;
+    height: fit-content;
+}
+
+#para1{
+    
+    margin-left: 20%;
+    margin-bottom: 3%;
+    
+    /* background-color: rgb(63, 59, 59); */
+    
+    
+    
+    
+    
+}
+#para2{
+    margin-right: 20%;
+    /* background-color: rgb(236, 179, 179); */
+    
+}
+    
+
+#p1{
+    text-align: right;
+    font-size: 2rem;
+    text-wrap: wrap;
+    
+    
+}
+#p2{
+    text-align: left;
+    font-size:  2.3rem;
+    text-wrap: wrap;
+    
+}
+
+#img1{ position: relative;
+    text-align: center;
+    bottom: 0%;
+    /* background-color: rgb(11, 8, 8); */
+    height: fit-content;
+
+}
+#img1{
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{ transform: rotate(360deg);}
+}
+
+
+
+#page3{
+    /* background-color: rgb(218, 215, 250); */
+    position: relative;
+    height: 100vh;
+    
+}
+
+.last{
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: fit-content;
+    width: 100vw;
+
+}
+.last{
+    animation: autoBlur linear both;
+    animation-timeline: view() ;
+
+}
+@keyframes autoBlur{
+    0%{filter: blur(40px);}
+    45% ,55%{filter: blur(0);}
+    100%{filter: blur(40px);}
+}
+
+#txt3{
+    font-size: 4.5em;
+}
+#txt5{
+    font-size: 4.5em;
+}
+
+#footer{
+    text-align: center;
+    font-size: 0.5em;
+    
+}
+
